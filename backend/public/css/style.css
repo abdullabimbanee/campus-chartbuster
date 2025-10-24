@@ -1,0 +1,163 @@
+:root {
+    --bg: #0f1724;
+    --card: #0b1220;
+    --accent: #59c0d7;
+    --muted: #9aa6b2;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Inter, system-ui, Arial;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #07121a 0%, #07202a 100%);
+    color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5)
+}
+
+.auth-card {
+    text-align: center;
+    padding: 30px
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px
+}
+
+.logo.small {
+    width: 60px
+}
+
+h1,
+h2 {
+    margin: 6px 0 14px
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.form input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: transparent;
+    color: var(--white)
+}
+
+.form button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 0;
+    background: var(--accent);
+    color: #052;
+    cursor: pointer;
+    font-weight: 600
+}
+
+.hidden {
+    display: none
+}
+
+.toggle {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 12px
+}
+
+.toggle button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 0;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer
+}
+
+.toggle button.active {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--white)
+}
+
+.msg {
+    color: #ffb0b0;
+    font-size: 0.9rem
+}
+
+.leaderboard {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.lead-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.02)
+}
+
+.lead-left {
+    display: flex;
+    gap: 12px;
+    align-items: center
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700
+}
+
+small {
+    display: block;
+    color: var(--muted)
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px
+}
+
+#logoutBtn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 6px 10px;
+    border-radius: 8px;
+    color: var(--white);
+    cursor: pointer
+}
